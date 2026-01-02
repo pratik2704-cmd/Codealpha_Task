@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Floating Button to get back on top -->
+    <a href="#home" id="floating-btn" class="floating-btn btn"><i class="ri-arrow-up-s-line icon f-icon"></i></a>
+
+    <!-- Header Navigation Section -->
+    <header id="header" class="header">
+        <nav id="nav" class="nav container">
+            <h1 class="nav-title">Developer.</h1>
+            <ul id="nav-menu" class="nav-menu">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <i class="ri-close-line nav-close icon"></i>
+            </ul>
+            <i class="ri-menu-line nav-open icon"></i>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container home-container">
+            <img src="./assets/pratik.png" alt="" class="home-img">
+            <div class="home-content">
+                <h1 class="home-title">Pratik Kumbhar</h1>
+                <p class="home-description">Pratik Kumbhar is a Frontend Engineer, Web Designer and Web Developer.</p>
+                <a href="/" class="home-btn btn">Work with me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="section project-section">
+        <div class="container project-container">
+            <h2 class="section-title">Projects</h2>
+            <hr class="line">
+            <div class="project-content">
+                <ul class="project-menu">
+                    <li class="project-item">
+                        <h4 class="project-title">iNotebook Web Application</h4>
+                        <h5 class="project-subtitle">MERN Stack</h5>
+                        <p class="project-description">A web application developed using the MERN stack. It allows users
+                            to sign up, log in, and log out. Users can create, edit, or delete notes, which are stored
+                            in the database.</p>
+                        <a href="https://github.com/saifiimuhammad/inotebook-web-app" target="_blank"
+                            class="project-btn btn"><i class="ri-git-repository-line project-icon"></i> Repo Link</a>
+                    </li>
+
+                    <li class="project-item">
+                        <h4 class="project-title">Ochi Design Modern Animated Website</h4>
+                        <h5 class="project-subtitle">Reactjs</h5>
+                        <p class="project-description">A Clone of Ochi Design website using Reactjs and Locomotive.</p>
+                        <a href="https://github.com/saifiimuhammad/Ochi-Design-Modern-Animated-Wesbite" target="_blank"
+                            class="project-btn btn"><i class="ri-git-repository-line project-icon"></i> Repo Link</a>
+                    </li>
+
+                    <li class="project-item">
+                        <h4 class="project-title">Times Of News</h4>
+                        <h5 class="project-subtitle">Reactjs</h5>
+                        <p class="project-description">A responsive news web app built with React, utilizing the NewsAPI
+                            to fetch news articles of various categories.</p>
+                        <a href="https://github.com/saifiimuhammad/TimesOfNews" target="_blank"
+                            class="project-btn btn"><i class="ri-git-repository-line project-icon"></i> Repo Link</a>
+                    </li>
+
+                    <li class="project-item">
+                        <h4 class="project-title">Todo List Web App</h4>
+                        <h5 class="project-subtitle">Reactjs | Typescript</h5>
+                        <p class="project-description">This project is a simple Todo App implemented using TypeScript
+                            and Vite. It features a fully responsive design and utilizes the browser's local storage to
+                            store user data.</p>
+                        <a href="https://github.com/saifiimuhammad/Todo-List-App---Typescript-version" target="_blank"
+                            class="project-btn btn"><i class="ri-git-repository-line project-icon"></i> Repo Link</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container skills-container">
+            <h2 class="section-title">Skills</h2>
+            <hr class="line">
+            <div class="skills-content">
+
+                <!-- Frontend Skills -->
+                <div class="skills-box">
+                    <h2 class="skills-title">Frontend</h2>
+                    <ul class="skills-menu">
+                        <li class="skills-item">
+                            <img src="./assets/html.png" alt="HTML Logo" class="skills-img img img-fixed">
+                            <p class="skills-text">HTML</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/css.png" alt="CSS Logo" class="skills-img img">
+                            <p class="skills-text">CSS</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/javascript.png" alt="JavaScript Logo" class="skills-img img">
+                            <p class="skills-text">JS</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/react.png" alt="React Logo" class="skills-img img">
+                            <p class="skills-text">React</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skills-box">
+                    <h2 class="skills-title">Backend</h2>
+                    <ul class="skills-menu">
+                        <li class="skills-item">
+                            <img src="./assets/java.png" alt="Nodejs Logo" class="skills-img img">
+                            <p class="skills-text">Java</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="skills-box">
+                    <h2 class="skills-title">Others</h2>
+                    <ul class="skills-menu">
+                        <li class="skills-item">
+                            <img src="./assets/git.png" alt="Git Logo" class="skills-img img">
+                            <p class="skills-text">Git</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/github.png" alt="Github Logo" class="skills-img img">
+                            <p class="skills-text">Github</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/vscode.png" alt="VScode Logo" class="skills-img img">
+                            <p class="skills-text">VS Code</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other languages -->
+                <div class="skills-box">
+                    <h2 class="skills-title">Programming Languages</h2>
+                    <ul class="skills-menu">
+                        <li class="skills-item">
+                            <img src="./assets/javascript.png" alt="JavaScript Logo" class="skills-img img">
+                            <p class="skills-text">JavaScript</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/c++.png" alt="C++ Logo" class="skills-img img">
+                            <p class="skills-text">C++</p>
+                        </li>
+                        <li class="skills-item">
+                            <img src="./assets/java.png" alt="Java Logo" class="skills-img img">
+                            <p class="skills-text">Java</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container contact-container">
+            <h2 class="section-title">Contact Me</h2>
+            <hr class="line">
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-fields" required>
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-fields" required>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" class="form-fields"></textarea>
+                    <button type="submit" class="contact-btn btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright Section -->
+    <footer id="footer" class="footer">
+        <p class="footer-text">Copyright &copy; pratik Kumbhar</p>
+    </footer>
+
+    <script src="scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

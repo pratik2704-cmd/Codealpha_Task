@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player CodeAlpha</title>
+    <link rel="stylesheet" href="/music.css">
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>   
+    <audio src="/music/arabic-instrumental-hip-hop-background-music-for-short-video-1-minute-144608.mp3" controls id="music"></audio>
+    <div class="playlists togglePlaylist" id="playlist">
+        <h2 id="title">Your Playlist</h2></h1>
+        <ul>
+            <li class="song addClass" id="id0" onclick="songByChoice(this)">arabic-instrumental-hip-hop</li>
+            <li class="song" id="id1" onclick="songByChoice(this)" id="click">blackout-nightS</li>
+            <li class="song" id="id2" onclick="songByChoice(this)">cartoon-intro</li>
+            <li class="song" id="id3" onclick="songByChoice(this)">dramatic-hip-hop-music-background-jazz-music</li>
+            <li class="song" id="id4" onclick="songByChoice(this)">energetic-background-reggaeton-short-fun-vlog-music</li>
+            <li class="song" id="id5" onclick="songByChoice(this)">funny-trumpet-hip-hop-background-music</li>
+            <li class="song" id="id6" onclick="songByChoice(this)">short-3</li>
+            <li class="song" id="id7" onclick="songByChoice(this)">space-intro</li>
+            <li class="song" id="id8" onclick="songByChoice(this)">stomps-and-claps-percussion-and-rhythM</li>
+            <li class="song" id="id9" onclick="songByChoice(this)" value="9">toy-story-short-happy-cartoony-intro-outro</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <button id="bars" onclick="togglePlaylist()"><i class="fa fa-bars"></i></button>
+        <div class="music-element">
+
+            <div class="song-profile">
+                <h2 id="song-name">arabic-instrumental-hip-hop</h2>
+                <img src="https://w0.peakpx.com/wallpaper/333/257/HD-wallpaper-trumpet-player-music.jpg" alt="" id="song-img">
+            </div>  
+
+            <input type="range" min="0" max="100" id="progress" value="0" step="1">
+            <div class="run-time">
+                <p id="current-time">0:0</p>
+                <p id="song-duration">2:43</p>
+            </div>
+            <div class="access-control">
+                <div class="media">
+                    <button onclick="back()"><i class="fa fa-step-backward"></i></button>
+                    <button id="play" onclick="togglePlay()"><i class="fa fa-play"></i></button>
+                    <button id="pause" onclick="togglePlay()"><i class="fa fa-pause"></i></button>
+                    <button><i class="fa fa-step-forward" onclick="next()"></i></button>
+                </div>
+                <div class="volume-control">
+                    <button id="volume-access">
+                        <i class="fa fa-volume-up" onclick="toggleMute()"></i>
+                    </button>
+                    <input type="range" min="0" max="1" step="0.1"  id="volume" onchange="setVolume()" value="0.5">
+                    <buttom id="repeat" onclick="loop()"><i class="fa fa-repeat"></i></buttom>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/music.js"></script>
+</body>
+</html>

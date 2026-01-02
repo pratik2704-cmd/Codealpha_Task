@@ -1,0 +1,374 @@
+:root {
+    --black: #202020;
+    --white: #f8f8f8;
+    --red: #FF3131;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* ------ Scrollbar ------ */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #cfcfcf;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+}
+
+/* ------ Reusable Classes ------ */
+
+.container {
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.icon {
+    font-size: 1.75rem;
+}
+
+.btn {
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--red);
+    padding: .5rem 1rem;
+    border-radius: 50px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--black);
+    margin-block: .5rem;
+    opacity: .4;
+}
+
+/* ------ Header Section ------ */
+
+.header {
+    background: transparent;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    position: relative;
+}
+
+@media screen and (min-width: 320px) {
+
+.nav-title {
+    color: var(--red);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+    .nav-menu {
+        position: absolute;
+        top: -700%;
+        left: 0;
+        z-index: 9999;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 400px;
+        background-color: var(--white);
+        padding-block: 1.25rem;
+        transition: .5s ease;
+    }
+    
+    .nav-link {
+        color: var(--black);
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+
+    .show-nav {
+        top: 0;
+        transition: .5s ease;
+    }
+
+    /* ------ Home Section ------ */
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+        margin-block: 6rem 2rem;
+    }
+
+    .home-img {
+        width: 200px;
+        border-radius: 100%;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-title {
+        font-size: 1.85rem;
+    }
+
+    .home-description {
+        text-align: center;
+    }
+
+    .home-btn {
+        margin-top: 1rem;
+    }
+
+    /* ------ Project Section ------ */
+
+    .project-container {
+        margin-block: 2rem;
+    }
+
+    .project-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        row-gap: 2rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .project-subtitle {
+        font-size: .95rem;
+        font-weight: 400;
+    }
+
+    .project-description {
+        margin-block: .75rem .5rem;
+        font-size: .85rem;
+    }
+
+    .project-icon {
+        color: var(--white);
+    }
+
+    /* ------ Skills Section ------ */
+
+    .skills-container {
+        margin-block: 2rem;
+    }
+
+    .skills-box {
+        padding-block: 1.25rem;
+    }
+
+    .skills-title {
+        text-transform: uppercase;
+    }
+
+    .skills-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        margin-top: 1.25rem;
+    }
+
+    .skills-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: .25rem;
+    }
+
+    .skills-img {
+        width: auto;
+        height: 40px;   
+    }
+
+    .img-fixed {
+        width: 33px;
+    }
+
+    .skills-text {
+        font-size: .95rem;
+    }
+
+    /* ------ Contact Section ------ */
+
+    .contact-container {
+        margin-block: 2rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: .15rem;
+    }
+
+    label {
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100%;
+        padding: .25rem;
+        border: 1px solid rgb(110, 110, 110);
+        border-radius: 2px;
+        outline: none;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+    }
+
+    .contact-btn {
+        border: none;
+        cursor: pointer;
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    /* ------ Footer Section ------ */
+
+    .footer {
+        margin-top: 1rem;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: var(--black);
+    }
+
+    .footer-text {
+        font-size: .85rem;
+        color: var(--white);
+        padding-block: 1rem;
+    }
+
+    .floating-btn {
+        position: fixed;
+        bottom:-5rem;
+        right: 6%;
+        z-index: 99;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    
+    .f-icon {
+        color: var(--white);
+    }
+    
+    .show-scroll {
+        bottom: 5rem;
+        transition: .3s ease-in-out;
+      }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-open, .nav-close {
+        display: none;
+    }
+
+    .container {
+        padding-inline: 4rem;
+    }
+
+    .btn {
+        font-size: .85rem;
+    }
+
+    .nav-menu {
+        position: initial;
+        height: auto;
+        flex-direction: row;
+        width: auto;
+        column-gap: 2rem;
+    }
+    
+    .nav-link {
+        font-size: 1.05rem;
+    }
+
+    .project-title {
+        font-size: 1.75rem;
+        line-height: 1.85rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .show-scroll {
+        bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding-inline: 8rem;
+    }
+}
